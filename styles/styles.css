@@ -175,7 +175,7 @@ p {
 }
 
 .title2 h1 {
-  font-size: 50px;
+  font-size: 3rem;
   pointer-events: none;
 }
 
@@ -219,12 +219,13 @@ p {
   background: linear-gradient(to right, tomato, rgb(253, 116, 92));
   box-shadow: 0px 2px 4px 0px rgba(253, 116, 92, 0.6);
 }
+
 /*Laptop Display*/
 @media screen and (max-width: 1400px) {
   .form-box {
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
+    width: 90%;
+    height: 90%;
+    border-radius: 40px;
   }
 
   .title {
@@ -295,19 +296,53 @@ p {
     width: 350px;
   }
 }
+
+/*Mobile screen*/
+@media screen and (max-width: 425px) {
+  .form-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  .left-container-form-wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .right-container-img-wrapper {
+    margin-left: 20px;
+  }
+  .right-container-img-wrapper img {
+    width: 375px;
+    object-fit: contain;
+    border-radius: 0px;
+  }
+  
+}
 /*Mobile screen*/
 @media screen and (max-width: 320px) {
-  .right-container-p p {
-    font-size: 1rem;
-    text-align: left;
-    margin-left: 30px;
+  .form-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
   }
-  .title h1 {
-    margin-left: 30px;
+  .title {
+    margin-right: 90px;
+  }
 
+  .title h1 {
+    font-size: 40px;
+    text-align: left;
+    pointer-events: none;
+    margin-left: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
   }
 }
-
 /*footer*/
 .attribution {
   width: 100% !important;
