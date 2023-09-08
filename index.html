@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"/>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./js/script.js"defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
   <body>
-    <div id="form-box" class="form-box"">
+    <div id="form-box" class="form-box">
       <!-- Sign-up form start -->
       <div class="left-container-form-wrapper">
         <form id="form" class="form">
@@ -24,23 +24,23 @@
             <ul class="list-info-services">
               <li>
                 <p>
-                  <img src="assets/images/icon-list.svg" /> Product discovery
+                  <img src="assets/images/icon-list.svg" alt="icon check mark"> Product discovery
                   and building what matters
                 </p>
               </li>
               <li>
                 <p>
-                  <img src="assets/images/icon-list.svg" /> Measuring to ensure
+                  <img src="assets/images/icon-list.svg" alt="icon check mark"> Measuring to ensure
                   updates are a success
                 </p>
               </li>
               <li>
-                <p><img src="assets/images/icon-list.svg" /> And much more!</p>
+                <p><img src="assets/images/icon-list.svg" alt="icon check mark"> And much more!</p>
               </li>
             </ul>
           </div>
           <div id="custom-input" class="custom-input">
-            <input id="email" type="text" placeholder="email@company.com" />
+            <input id="email" type="text" placeholder="email@company.com">
             <div id="email-label" class="email-label">
               <label for="email">Email address</label>
             </div>
@@ -50,7 +50,7 @@
           </div>
         </form>
         <div class="right-container-img-wrapper">
-          <img id="img" src="" alt="Newsletter logo">
+          <img class="img" src="" alt="sign up logo">
         </div>
         
       </div>
@@ -59,7 +59,7 @@
       <!-- Success message start -->
 
       <div id="popup-message" class="popup-message hidden">
-        <div class="tick-icon"><img src="assets/images/icon-success.svg" alt=""></div>
+        <div class="tick-icon"><img src="assets/images/icon-success.svg" alt="icon success"></div>
         <div class="title2"><h1>Thanks for subscribing!</h1></div>
         <div class="right-container-p-success">
           <p>
@@ -81,5 +81,7 @@
       </footer>
     </div>
 
+    <!-- JS Script -->
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
